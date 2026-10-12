@@ -1,0 +1,13 @@
+#!/bin/sh
+
+LOG_DIR=".assessment"
+LOG_FILE="$LOG_DIR/activity.log"
+
+mkdir -p "$LOG_DIR"
+
+BRANCH=$(git branch --show-current)
+TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+echo "COMMIT | $TIME | branch=$BRANCH" >> "$LOG_FILE"
+
+echo "Assessment activity recorded: $TIME"

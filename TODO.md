@@ -1,5 +1,25 @@
 # Node.js Coding Test
 
+## Before You Start
+
+1. Enable the project Git hooks (required for activity recording):
+
+```bash
+git config core.hooksPath .githooks
+```
+
+2. Create a new assessment branch named after your GitHub username:
+
+```bash
+git checkout -b <your-github-username>
+```
+
+## When You Finish
+
+1. Commit your changes.
+2. Raise the PR
+
+
 ## Time Limit
 
 10 minutes
